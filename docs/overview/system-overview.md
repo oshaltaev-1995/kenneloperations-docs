@@ -2,7 +2,9 @@
 
 Kennel Operations turns kennel records and daily schedules into safe, traceable work plans.
 
-The dog registry owns identity, work class, lifecycle, capabilities, status, housing, and historical presentation. Date-effective assignments allow the map, Daily Entry, and historical views to resolve housing for the relevant date.
+Dashboard is the date-selectable operational landing view. It summarizes current population, eligibility, completed work, training distance and Carousel exposure, workload distribution, workload-review dogs, and planning blockers. Its links open the filtered Dogs views or Kennel Map without making the Dashboard a second activity ledger.
+
+The dog registry owns identity, work class, lifecycle, capabilities, status, housing, and historical presentation. Date-effective assignments allow the map, Daily Entry, and historical views to resolve housing for the relevant date. Kennel Map projects those records onto the physical ground geometry and provides current relocation controls while keeping historical layouts read-only.
 
 Operations Plans represent customer-facing Winter work. Departures originate in Explores or manual entry, are reviewed, assigned to Vanha or Uusi, populated by the Winter solver, saved, printed, and reconciled to Actual work.
 

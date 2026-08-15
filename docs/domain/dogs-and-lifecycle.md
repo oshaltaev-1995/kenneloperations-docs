@@ -23,3 +23,14 @@ Capabilities (`can_lead`, `can_team`, `can_wheel`) describe possible harness rol
 - Deceased is lifecycle-first and is not treated as an Available operational dog.
 
 See [Archive](archive.md) for fate metadata and deletion policy.
+
+## Dog Detail
+
+Dog Detail is a lifecycle-aware composition rather than one flat record form:
+
+- **Overview** combines identity, role/capabilities, current or last-known housing, co-residents, family/pedigree context, and lifecycle metadata where applicable.
+- **Status & availability** projects current operational status and provides baseline, temporary-status, Front Yard, work-class, and Team Builder eligibility controls for current operational dogs.
+- **Workload & activity** presents workload/risk context and canonical activity history for a selected reference date.
+- **Profile & history** retains profile fields, resolved status records, date-effective housing intervals, and operational-assignment history.
+
+Lifecycle changes the presentation boundary. Archived and Deceased profiles omit current operational controls, show last-known housing and historical summaries, and keep meaningful work collapsed with only the latest ten rows projected when expanded. Active and Retired profiles retain the operational sections allowed by their current semantics.

@@ -17,6 +17,12 @@ Explores supplies external schedule identity and customer context. Manual operat
 
 The Winter automatic solver is entered from an Operations departure. Generated output is only a proposal; saved teams and `PlannedTeamHarnessRow` records are the persisted plan. Editing uses optimistic revision checks to prevent stale overwrites.
 
+## Review teams
+
+Once a departure has saved teams, the same entry point becomes **Review teams**. It opens the compact saved lineup in persisted Lead/Team/Wheel rows and re-evaluates projected workload for the plan date and departure. Operator-facing Normal, Elevated, High, Critical, confirmation, and hard-blocker messages are shown without exposing internal ranking-penalty numbers.
+
+Warnings remain review evidence, not silent mutations. Human-readable Explores differences show saved and incoming values while protecting existing operator-owned lineup, Actual, and area decisions. Temporal conflicts or incomplete workload projections remain visible for deliberate review before a team is changed or saved.
+
 ## Print families
 
 Winter and Autumn use the accepted Model-style card family, but their geometry comes from different persisted sources: generated/saved Winter harness rows versus manual Autumn rows. Guide notes remain with their team/group. Carousel print is deliberately names-only and has no housing, statuses, or fabricated pairs.
