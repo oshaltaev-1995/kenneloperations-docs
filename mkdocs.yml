@@ -1,0 +1,62 @@
+site_name: Kennel Operations Documentation
+site_description: Sanitized technical documentation for Kennel Operations
+site_url: https://oshaltaev-1995.github.io/kenneloperations-docs/
+repo_url: https://github.com/oshaltaev-1995/kenneloperations-docs
+repo_name: oshaltaev-1995/kenneloperations-docs
+strict: true
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Overview:
+      - System overview: overview/system-overview.md
+      - Architecture: overview/architecture.md
+      - Terminology: overview/terminology.md
+  - Domain:
+      - Dogs and lifecycle: domain/dogs-and-lifecycle.md
+      - Housing and kennel map: domain/housing-and-kennel-map.md
+      - Workload and activity: domain/workload-and-activity.md
+      - Operations Plans: domain/operations-plans.md
+      - Winter Team Builder: domain/winter-team-builder.md
+      - Actual and reconciliation: domain/actual-and-reconciliation.md
+      - Training: domain/training.md
+      - Daily Entry: domain/daily-entry.md
+      - Analytics and exports: domain/analytics-and-exports.md
+      - Archive: domain/archive.md
+  - Integrations:
+      - Explores: integrations/explores.md
+  - Administration:
+      - Authentication and roles: administration/authentication-and-roles.md
+      - Deployment and rollback: administration/deployment.md
+      - Backups and recovery: administration/backups-and-recovery.md
+      - Configuration: administration/configuration.md
+  - Development:
+      - Local development: development/local-development.md
+      - Database and migrations: development/database-and-migrations.md
+      - Testing: development/testing.md
+      - Release process: development/release-process.md
+  - Reference:
+      - Data model: reference/data-model.md
+      - API overview: reference/api-overview.md
+      - Release notes: reference/release-notes.md
