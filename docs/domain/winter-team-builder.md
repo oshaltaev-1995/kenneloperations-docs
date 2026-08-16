@@ -6,6 +6,17 @@ The Winter automatic solver belongs to Operations. It does not generate Autumn o
 
 The solver works within one departure and one operational side. Vanha and Uusi candidates never mix. It supports canonical 3 km and 10 km programs, checks lifecycle and operational eligibility, projects workload including same-day saved work, enforces temporal feasibility, and applies housing/pairing relationships and dog-specific rules.
 
+Work class is evaluated separately from availability. An Active dog can be Available and still be ineligible for automatic Winter generation:
+
+| Work class | Automatic Winter Operations result |
+| --- | --- |
+| Puppy | Hard excluded |
+| Junior | Hard excluded |
+| Training | Hard excluded |
+| Standard | Eligible when all other safety and operational requirements pass |
+
+There is no warning override for the three pre-standard classes. Age does not independently hard-block a dog that is already Standard and does not automatically change work class or lifecycle.
+
 Critical projected workload and hard availability/lifecycle blockers exclude automatic selection. High workload may remain selectable with an explicit warning or acknowledgement according to the workflow. Soft pairing preferences never override hard safety.
 
 ## Harness geometry

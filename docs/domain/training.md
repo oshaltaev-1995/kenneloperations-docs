@@ -6,9 +6,20 @@ Training is the manual planning workspace. It is architecturally separate from t
 
 A Saved Group is organizational membership. Profiles include Carousel, Autumn training, Winter training, and Winter safari. Group size and class guidance are profile-specific, and membership can retain useful context that would not be safe to run today.
 
+Saved Groups may retain all four canonical work classes, with contextual advisory presentation where applicable. Training does not apply the Operations-only Winter solver policy wholesale. For Daily Plan Ready, the current class policy is:
+
+| Work class | Carousel | Autumn | Winter Training |
+| --- | --- | --- | --- |
+| Puppy | Allowed | Blocked | Blocked |
+| Junior | Allowed | Blocked | Allowed |
+| Training | Allowed | Allowed | Allowed |
+| Standard | Normally allowed | Normally allowed | Normally allowed |
+
+These results remain subject to unrelated status, required metadata, conflict, workload, and profile constraints.
+
 Creating a Daily Plan copies selected group members into an independent snapshot. Later edits to the group do not mutate the plan, and plan roster replacements do not mutate the group.
 
-`Ready` is the operational gate. It reevaluates each member on the plan date, checks duplicate/overlapping Ready work, validates profile constraints, and uses optimistic revision control. Injury, illness, pregnancy, treatment/rest/restriction contexts that make a dog unavailable block Ready. Archived and Deceased dogs cannot form an operational plan. Current source treats Retired and Front Yard context as advisory for local Training Ready, not as automatic group deletion. Workload warnings may require acknowledgement.
+`Ready` is the operational gate. It reevaluates each member on the plan date, checks duplicate/overlapping Ready work, validates profile constraints, and uses optimistic revision control. Injury, illness, pregnancy, treatment/rest/restriction contexts that make a dog unavailable block Ready. A manual Team Builder exclusion is separate from baseline Restricted but also blocks Ready under the current policy. Archived and Deceased dogs cannot form an operational plan. Current source treats Retired and Front Yard context as advisory for local Training Ready, not as automatic group deletion. A Retired dog may therefore retain an Available baseline, remain in a Saved Group, and pass local Training Ready with an advisory even though lifecycle hard-blocks automatic Winter Operations. Workload warnings may require acknowledgement.
 
 ## Autumn
 

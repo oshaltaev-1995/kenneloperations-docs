@@ -2,13 +2,17 @@
 
 ## Three independent classifications
 
-**Work class** describes development and work context: `puppy`, `junior`, `training`, or `standard`. Older values remain readable for compatibility, but new writes use the four canonical classes.
+**Work class** describes development and work context: `puppy`, `junior`, `training`, or `standard`. It is independent from operational availability: an Active Puppy, Junior, or Training dog may still be Available while remaining ineligible for automatic Winter Operations team generation. Older values remain readable for compatibility, but new writes use the four canonical classes. Class changes are deliberate operator decisions; age does not automatically change class or lifecycle.
 
 **Lifecycle** describes the record's operational phase: `active`, `retired`, `archived`, or `deceased`.
 
 **Operational status** is date-effective. It combines the persistent availability baseline, temporary status periods, explicit Team Builder exclusion, lifecycle, and relevant operational assignments. It must not be inferred from a badge cached by the client.
 
+Baseline Restricted and manual Team Builder exclusion are separate controls. Restricted changes effective availability. Manual exclusion may leave effective availability as Available while independently blocking Team Builder selection. Both block automatic Winter generation and Daily Plan Ready under the current operational policy.
+
 Archived and Deceased dogs are historical and operationally unavailable. A stored baseline such as Available may remain as history, but it does not make the dog currently available.
+
+Retired and Available can coexist. Lifecycle still blocks automatic Winter generation and makes the dog Unavailable on Kennel Map, while Saved Training Group membership and local Training Ready currently retain the dog with advisory treatment.
 
 ## Status and capabilities
 

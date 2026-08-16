@@ -53,7 +53,7 @@ The operator-facing layer order is defined by `KennelMapPageComponent`:
 
 The current client does not calculate separate workload windows when switching between **7d workload** and **14d workload**; both selectors render the canonical severity returned in the dog-summary payload. This is an honest description of the current implementation, not a claim that layer selection recomputes workload.
 
-**Unavailable** is an independent overlay rather than a layer. It uses the effective status projection for the reference date, mutes an unavailable dog name, and shows the highest-priority dated marker for Injury, Illness, Pregnant, Rest / recovery, Retired, or Manual exclusion. Tooltips retain the status reason and Front Yard planning context.
+**Unavailable** is an independent overlay rather than a layer. It uses lifecycle and effective operational blocking for the reference date, mutes an unavailable dog name, and shows the highest-priority dated marker for Injury, Illness, Pregnant, Rest / recovery, Retired, or Manual exclusion. It intentionally does not represent work class. An Active + Available Puppy, Junior, or Training dog can therefore look normal under Unavailable; use the separate **Class** layer to visualize work class. Tooltips retain the status reason and Front Yard planning context.
 
 Layer switching is visual only. It changes CSS treatments and markers, and preserves the selected layer in the URL. It does **not** move dogs, create status periods, change Front Yard, alter workload, change lifecycle, edit housing history, or affect planning eligibility.
 
