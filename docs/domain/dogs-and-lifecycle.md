@@ -33,4 +33,6 @@ Dog Detail is a lifecycle-aware composition rather than one flat record form:
 - **Workload & activity** presents workload/risk context and canonical activity history for a selected reference date.
 - **Profile & history** retains profile fields, resolved status records, date-effective housing intervals, and operational-assignment history.
 
+When a real Dog photo loads successfully on Dog Detail, the photo is an accessible control that opens a larger read-only view while preserving its aspect ratio. Click or keyboard activation opens it; **Close**, Escape, or the backdrop closes it. Read-only users may view the larger photo. A placeholder or failed/no-photo state is not interactive. This behavior is limited to Dog Detail and does not apply to registry or Archive cards.
+
 Lifecycle changes the presentation boundary. Archived and Deceased profiles omit current operational controls, show last-known housing and historical summaries, and keep meaningful work collapsed with only the latest ten rows projected when expanded. Active and Retired profiles retain the operational sections allowed by their current semantics.

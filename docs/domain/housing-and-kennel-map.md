@@ -28,6 +28,8 @@ The workspace can focus on all kennel areas, Vanha, Uusi, or Special areas. Sear
 
 On a current view, **Move dogs** supports staged drag-and-drop between pens and an explicit move dialog. An occupied target requires a deliberate place-together or swap decision. Pending moves can be undone or discarded before one backend batch save. The map does not expose a separate unassigned-dog strip: dogs without a complete, valid physical home are not placed in a pen.
 
+Current housing moves are available to Admin, Manager, Planner, and Staff. Staff permission applies only to current housing movement; it does not grant general Dog-profile editing, status/lifecycle management, Front Yard changes, or housing-history rewriting. Viewer is read-only.
+
 Front Yard is a date-effective operational assignment, not a housing location. A Front Yard dog remains in its physical housing cell and can be outlined by the Front Yard layer.
 
 The ground view supports 35–100% zoom, Fit, pointer panning, wheel zoom, and drag-edge scrolling. At narrower widths the toolbar wraps and the Row table changes from multiple columns to one; Fit scales the fixed ground geometry without changing pen relationships.
@@ -73,7 +75,7 @@ This is architectural reuse, not a map-layer effect. The suggestion is advisory 
 
 The map receives an optional `as_of_date` and requests the effective dog summary for that date. The same reference date selects D1 cell count, spans, corridor position, housing, Front Yard membership, status markers, previous-day work, and workload context.
 
-A view for a date other than today is read-only. **Move dogs** is disabled, drag/drop and the move dialog are guarded, and no housing batch can be saved. Current move selectors expose only current valid pens. A former identity can remain visible in historical context but must be explicitly remapped before a current edit is saved.
+A view for a date other than today is read-only for every role. **Move dogs** is disabled, drag/drop and the move dialog are guarded, and no housing batch can be saved. Current move selectors expose only current valid pens. A former identity can remain visible in historical context but must be explicitly remapped before a current edit is saved.
 
 ### Layout evolution
 

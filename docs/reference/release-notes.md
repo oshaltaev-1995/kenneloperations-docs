@@ -1,5 +1,19 @@
 # Release notes
 
+## Post-release 1 - 2026-08-16
+
+Application commit: `500c8be9ea24c4a7f66e8a0b1c7aec797f23a29f`
+
+Schema head: `a7c3d9e1f502` (unchanged; no migration)
+
+This targeted production update:
+
+- permits Staff to save ordinary manual Daily Entry work while keeping historical correction/delete restricted to Manager/Admin;
+- permits Staff to move Dogs between current housing pens without granting general Dog/status/lifecycle management;
+- adds a read-only full-size photo view on Dog Detail for successfully loaded real photos.
+
+Viewer remains strictly read-only.
+
 ## Level II production release — 2026-08-15
 
 Release commit: `e55bf50e38da6a343a73db2c3825149c0e1eb64d`

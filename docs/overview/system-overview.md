@@ -2,6 +2,8 @@
 
 Kennel Operations turns kennel records and daily schedules into safe, traceable work plans.
 
+The current production application reference is `500c8be9ea24c4a7f66e8a0b1c7aec797f23a29f`, deployed on 16 August 2026. Its post-release update added narrow Staff Daily Entry/current-housing execution permissions and read-only full-size Dog Detail photo viewing; the schema head remains `a7c3d9e1f502`.
+
 Dashboard is the date-selectable operational landing view. It summarizes current population, eligibility, completed work, training distance and Carousel exposure, workload distribution, workload-review dogs, and planning blockers. Its links open the filtered Dogs views or Kennel Map without making the Dashboard a second activity ledger.
 
 The dog registry owns identity, work class, lifecycle, capabilities, status, housing, and historical presentation. Date-effective assignments allow the map, Daily Entry, and historical views to resolve housing for the relevant date. Kennel Map projects those records onto the physical ground geometry and provides current relocation controls while keeping historical layouts read-only.
